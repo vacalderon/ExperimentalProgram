@@ -2054,14 +2054,6 @@ Sec       in        kip
 204.89453 1.3693811 33.315529
 204.99463 1.3700174 33.311832
 205.09473 1.3707082 33.308998
-
-
-Data Header:                                                Time:     243.39648 Sec       9/24/2021 1:13:23 PM
-Data Acquisition: Timed
-Station Name: ftse.cfg
-Test File Name: Untitled test
-Time      Ch Disp.  Ch Force
-Sec       in        kip
 205.19482 1.3713871 33.312298
 205.29492 1.3721094 33.298611
 205.39502 1.3727938 33.299255
