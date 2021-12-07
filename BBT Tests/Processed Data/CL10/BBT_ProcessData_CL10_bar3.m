@@ -6,7 +6,7 @@ clc; clearvars; close all;
 BarNum =  3;
 OTfile1 = '02';
 OTfile2 = '03';
-Direct = -1;         % 1 for buckling back, -1 for buckling forward
+Direct = 1;         % 1 for buckling back, -1 for buckling forward
 MTSforce = 3;       % column which has MTS force data
 MTSdisp = 2;        % column which has MTS displacement data
 n = 4;              % Order of polynomial to fit
@@ -18,8 +18,8 @@ PrintLocation = 'C:\ConditionDependentPBEE\ExperimentalProgram\BBT Tests\Process
 addpath('C:\ConditionDependentPBEE\ExperimentalProgram\BBT Tests\Raw Data\CL10\MTS')
 addpath('C:\ConditionDependentPBEE\ExperimentalProgram\BBT Tests\Raw Data\CL10\Optotrack\CDPBEE_corrosion_2021_12_07_094712');
 
-filename1 = ['CDPBEE_corrosion_2021_12_07_132308_0',(OTfile1),'_3d.xls'];     % name of Optotrak data file - push
-filename2 = ['CDPBEE_corrosion_2021_12_07_132308_0',(OTfile2),'_3d.xls'];     % name of Optotrak data file - pull
+filename1 = ['CDPBEE_corrosion_2021_12_07_094712_0',(OTfile1),'_3d.xls'];     % name of Optotrak data file - push
+filename2 = ['CDPBEE_corrosion_2021_12_07_094712_0',(OTfile2),'_3d.xls'];     % name of Optotrak data file - pull
 filename3 = ['bbt_10_',num2str(BarNum),'_comp.txt'];                              % name of MTS data file - push
 filename4 = ['bbt_10_',num2str(BarNum),'_tension.txt'];                              % name of MTS data file - pulls                              % name of MTS data file - pulls 
 header1 = 5;                            % number of header lines to skip in Optotrak
