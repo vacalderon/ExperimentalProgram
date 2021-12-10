@@ -1,0 +1,173 @@
+Evaluators
+{
+
+CScimitarRTDoc : Collection_Producer
+{
+[Raw Data Files]
+raw = CDPBEE_corrosion_2021_12_07_094712_019.nrw
+CoordinateSystem = standard.cam
+[OPTOTRAK System]
+MarkerType = 3
+WavelengthType = 0
+ModelType = 2
+
+
+[GENERIC_SETTINGS]
+Description = 
+
+[COLLECTION_SETTINGS]
+CollectionTime = 99999.000000
+FrameFrequency = 1.000000
+CollectionDelay = 0
+CompositeClock = 0
+
+[MARKERS_SETTINGS]
+NumberOfMarkers = 9
+
+[MARKER_SETTINGS]
+Port1 = 9
+Port2 = 0
+Port3 = 0
+Port4 = 0
+DutyCycle = 70
+MarkerFrequency = 2500.000000
+StroberVoltage = 10.700000
+PopulatedPorts = 1
+[Layout - P0]
+Label = Port 1
+MarkersAvailable = 0
+UseRom = 0
+Cap3020 = 0
+HasROM = 0
+ToolPorts = 0
+VLEDs = 0
+Switches = 0
+Port = 1
+Order = -1
+SubPort = -1
+StroberCount = 1
+[Layout - P0_S0]
+Label = Marker Strober
+MarkersAvailable = 24
+UseRom = 0
+Cap3020 = 0
+HasROM = 0
+ToolPorts = 0
+VLEDs = 0
+Switches = 2
+Port = 1
+Order = 1
+SubPort = 0
+MaxMarkerVoltage = 12
+MarkersToActivate = 9
+Type = 2
+MarkerIndexCount = 9
+MarkerIndex0 = 0
+MarkerIndex1 = 1
+MarkerIndex2 = 2
+MarkerIndex3 = 3
+MarkerIndex4 = 4
+MarkerIndex5 = 5
+MarkerIndex6 = 6
+MarkerIndex7 = 7
+MarkerIndex8 = 8
+SwitchIndexCount = 2
+SwitchIndex0 = 0
+SwitchIndex1 = 1
+ToolCount = 0
+
+[Mkr_0]
+Label = Marker_1
+FOR_ID = 0
+RB_ID = 0
+FIRING_NODE = 1
+[Mkr_1]
+Label = Marker_2
+FOR_ID = 0
+RB_ID = 0
+FIRING_NODE = 2
+[Mkr_2]
+Label = Marker_3
+FOR_ID = 0
+RB_ID = 0
+FIRING_NODE = 3
+[Mkr_3]
+Label = Marker_4
+FOR_ID = 0
+RB_ID = 0
+FIRING_NODE = 4
+[Mkr_4]
+Label = Marker_5
+FOR_ID = 0
+RB_ID = 0
+FIRING_NODE = 5
+[Mkr_5]
+Label = Marker_6
+FOR_ID = 0
+RB_ID = 0
+FIRING_NODE = 6
+[Mkr_6]
+Label = Marker_7
+FOR_ID = 0
+RB_ID = 0
+FIRING_NODE = 7
+[Mkr_7]
+Label = Marker_8
+FOR_ID = 0
+RB_ID = 0
+FIRING_NODE = 8
+[Mkr_8]
+Label = Marker_9
+FOR_ID = 0
+RB_ID = 0
+FIRING_NODE = 9
+
+[SWITCH_SETTINGS]
+SwitchCount = 2
+[Switch_0]
+Action = 0
+
+[Switch_1]
+Action = 0
+
+
+[RIGID_SETTINGS]
+RBCount = 0
+
+
+[ODAU_SETTINGS]
+ODAUCount = 0
+}
+CViewCollector : CTextView
+{
+ShowTypes = 79
+Units = 0
+Precision = 3
+RotationType = 0
+
+}
+CViewCollector : CSpatialView
+{
+ShowTypes = 65535
+ViewPerspRotation = 15.000, 0.000, 0.000
+ViewPerspTrans = 2.519, 0.272, 15.449, 2.500
+ViewFrontTrans = 0.000, 0.000, 0.000
+ViewTopTrans = 0.000, 0.000, 0.000
+ViewRightTrans = 0.000, 0.000, 0.000
+ViewScales = 0.080, 0.060, 0.060, 0.060
+ViewType = 1
+MarkerType = 2
+ShowToolbar = 1
+FrameRef = 3
+Lock3D = 0
+
+}
+
+}
+
+Connections
+{
+
+
+}
+
