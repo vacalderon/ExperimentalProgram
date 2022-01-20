@@ -4,24 +4,24 @@ clc; clearvars; close all;
 
 % Input Parameters
 BarNum =  5;
-OTfile1 = '07';
-OTfile2 = '08';
+OTfile1 = '10';
+OTfile2 = '11';
 Direct = -1;         % 1 for buckling back, -1 for buckling forward
 MTSforce = 3;       % column which has MTS force data
 MTSdisp = 2;        % column which has MTS displacement data
 n = 4;              % Order of polynomial to fit
-dbl = 0.7115;        % Diameter of rebar, in
+dbl = 0.731;        % Diameter of rebar, in
 BarDia = 25.4*dbl;  % Diameter of rebar, mm
 Ab = (pi/4)*dbl^2;  % area of rebars, in2
 
-PrintLocation = 'C:\ConditionDependentPBEE\ExperimentalProgram\BBT Tests\Processed Data\CL10\bar';
-addpath('C:\ConditionDependentPBEE\ExperimentalProgram\BBT Tests\Raw Data\CL10\MTS')
-addpath('C:\ConditionDependentPBEE\ExperimentalProgram\BBT Tests\Raw Data\CL10\Optotrack\CDPBEE_corrosion_2021_12_07_094712');
+PrintLocation = 'C:\ConditionDependentPBEE\ExperimentalProgram\BBT Tests\Processed Data\CL5\bar';
+addpath('C:\ConditionDependentPBEE\ExperimentalProgram\BBT Tests\Raw Data\CL5\MTS')
+addpath('C:\ConditionDependentPBEE\ExperimentalProgram\BBT Tests\Raw Data\CL5\Optotrack\CDPBEE_corrosion_2021_12_22_095413');
 
-filename1 = ['CDPBEE_corrosion_2021_12_07_094712_0',(OTfile1),'_3d.xls'];     % name of Optotrak data file - push
-filename2 = ['CDPBEE_corrosion_2021_12_07_094712_0',(OTfile2),'_3d.xls'];     % name of Optotrak data file - pull
-filename3 = ['bbt_10_',num2str(BarNum),'_comp.txt'];                              % name of MTS data file - push
-filename4 = ['bbt_10_',num2str(BarNum),'_tension.txt'];                              % name of MTS data file - pulls                              % name of MTS data file - pulls 
+filename1 = ['CDPBEE_corrosion_2021_12_22_095413_0',(OTfile1),'_3d.xls'];     % name of Optotrak data file - push
+filename2 = ['CDPBEE_corrosion_2021_12_22_095413_0',(OTfile2),'_3d.xls'];     % name of Optotrak data file - pull
+filename3 = ['bbt_5_',num2str(BarNum),'_comp.txt'];                              % name of MTS data file - push
+filename4 = ['bbt_5_',num2str(BarNum),'_tension.txt'];                              % name of MTS data file - pulls                              % name of MTS data file - pulls 
 header1 = 5;                            % number of header lines to skip in Optotrak
 header2 = 8;                            % number of header lines to skip in MTS file
 np = 7;                                 % number of Optotrak sensors
@@ -213,7 +213,7 @@ for i=1:100
         break
     end
 end
-%zerostress = 6;
+zerostress = 6;
 %% Calculate strains
 
 % Initialize matrices for speed
