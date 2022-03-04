@@ -21,7 +21,7 @@ def tensionresults(optotrakfile,daq_file,diameter_of_bar,corrosionlevel,test_num
     L0=[]
     with open(optotrakfile) as f:
         first_line = f.readline()
-    number_of_points=int(first_line[18:22])
+    number_of_points=int(first_line[18:21])
 
     strain=np.empty([number_of_points,number_of_gages])
 
@@ -80,12 +80,7 @@ def tensionresults(optotrakfile,daq_file,diameter_of_bar,corrosionlevel,test_num
     
     data_dictionary={'stress':stresses[0:complete_data_points],
                      'strain_1':strain[0:complete_data_points,1],
-                     'strain_2':strain[0:complete_data_points,2],
-                     'strain_3':strain[0:complete_data_points,3],
-                     'strain_4':strain[0:complete_data_points,4],
-                     'strain_5':strain[0:complete_data_points,5],
-                     'strain_6':strain[0:complete_data_points,6],
-                     'strain_7':strain[0:complete_data_points,7]}    
+                     'strain_2':strain[0:complete_data_points,2]}    
     
     data_frame_out=pd.DataFrame(data_dictionary)
-    data_frame_out.to_csv('stress_strain_CL'+str(corrosionlevel)+'-test_'+str(test_number)+'.csv')
+    data_frame_out.to_csv('stress_strain_TD'+str(corrosionlevel)+'-test_'+str(test_number)+'.csv')
